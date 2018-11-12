@@ -54,7 +54,7 @@ public class UserTable {
                         new Long(5), new Long(5)))
                 .withTableName("IST440Users");
 
-        creds = new BasicAWSCredentials("AKIAINPI6PCQUEK67HPA", "xzanBqXX7+9jYGRDdDEsHnWSVd4gsNMX5+wQ4y5D");
+        creds = new BasicAWSCredentials("no", "nope");
         client = AmazonDynamoDBClientBuilder.standard().
                 withRegion("us-east-1")
                 .withCredentials(new AWSStaticCredentialsProvider(creds))
