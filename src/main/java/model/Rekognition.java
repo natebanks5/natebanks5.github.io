@@ -40,7 +40,7 @@ public class Rekognition {
      * @throws IOException 
      */
     public String digitizeText(String photo) throws IOException {
-        BasicAWSCredentials creds = new BasicAWSCredentials("AKIAINPI6PCQUEK67HPA", "xzanBqXX7+9jYGRDdDEsHnWSVd4gsNMX5+wQ4y5D");
+        BasicAWSCredentials creds = new BasicAWSCredentials("not", "real");
         rekognitionClient = AmazonRekognitionClientBuilder.standard()
                 .withRegion("us-east-1")
                 .withCredentials(new AWSStaticCredentialsProvider(creds))
