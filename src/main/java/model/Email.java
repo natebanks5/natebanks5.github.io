@@ -82,7 +82,7 @@ public class Email {
      */
     private void setupEmail() {
         final String username = "nlb5264";
-        final String password = "Decrypt123";
+        final String password = "";
         String host = "smtp.gmail.com";
         Properties pro = new Properties();
         pro.put("mail.smtp.host", host);
