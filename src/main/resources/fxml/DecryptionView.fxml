@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="decryptionPane" fx:id="decryptionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DecryptionController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="641.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="231.0" layoutY="14.0" prefHeight="2.0" prefWidth="175.0" text="Decryption" textFill="#1e849e">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="caesarLabel" layoutX="23.0" layoutY="198.0" prefHeight="39.0" prefWidth="191.0" text="Caesar Cipher Result:" textFill="#1e849e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="caesarText" layoutX="222.0" layoutY="200.0" prefHeight="34.0" prefWidth="408.0" text="C" textFill="#1e849e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="vigenereLabel" layoutX="3.0" layoutY="291.0" prefHeight="34.0" prefWidth="208.0" text="Vigenere Cipher Result:" textFill="#1e849e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="vigenereText" layoutX="222.0" layoutY="291.0" prefHeight="34.0" prefWidth="408.0" text="V" textFill="#1e849e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="digitizedTextField" alignment="CENTER" layoutX="3.0" layoutY="113.0" prefHeight="39.0" prefWidth="631.0" text="Digitized Text: " textFill="#1e849e">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="emailButton" alignment="CENTER" buttonType="RAISED" layoutX="262.0" layoutY="355.0" onAction="#sendEmail" prefHeight="31.0" prefWidth="105.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Send Email" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="homeButton" alignment="CENTER" buttonType="RAISED" layoutX="188.0" layoutY="403.0" onAction="#goHome" prefHeight="45.0" prefWidth="265.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Home" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

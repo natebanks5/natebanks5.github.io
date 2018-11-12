@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="homePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="641.0" style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#153b5e" height="133.0" layoutX="76.0" layoutY="266.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+            <Label layoutX="233.0" layoutY="27.0" text="Decryption" textFill="#1e849e">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="153.0" text="Image:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="100.0" text="Upload an image of the text you would like decrypted:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="250.0" layoutY="276.0" text="Encrypted Text:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="selectedFileText" layoutX="258.0" layoutY="151.0" prefHeight="26.0" prefWidth="349.0" text="Selected File:  " textAlignment="JUSTIFY" textFill="WHITE" visible="false" />
+            <JFXButton fx:id="uploadButton" alignment="CENTER" buttonType="RAISED" layoutX="301.0" layoutY="196.0" onAction="#uploadListener" prefHeight="31.0" prefWidth="92.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Upload" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="fileSelector" alignment="CENTER" buttonType="RAISED" layoutX="169.0" layoutY="148.0" onAction="#fileSelection" prefHeight="20.0" prefWidth="72.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Browse" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="encryptedField" alignment="CENTER" focusColor="WHITE" layoutX="76.0" layoutY="308.0" prefHeight="31.0" prefWidth="485.0" promptText="Digitized text will appear here" style="-fx-background-color: white;" />
+            <JFXButton fx:id="translateButton" alignment="CENTER" buttonType="RAISED" layoutX="159.0" layoutY="358.0" onAction="#translateText" prefHeight="31.0" prefWidth="92.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Translate" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="decryptButton" alignment="CENTER" buttonType="RAISED" layoutX="341.0" layoutY="358.0" onAction="#decryptText" prefHeight="31.0" prefWidth="92.0" ripplerFill="BLACK" style="-fx-background-color: #1e849e#1e849e;" text="Decrypt" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
