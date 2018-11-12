@@ -25,7 +25,7 @@ public class Translation {
      * @return 
      */
     public String translateText(String text) {
-        BasicAWSCredentials creds = new BasicAWSCredentials("AKIAINPI6PCQUEK67HPA", "xzanBqXX7+9jYGRDdDEsHnWSVd4gsNMX5+wQ4y5D");
+        BasicAWSCredentials creds = new BasicAWSCredentials("nope", "nonono");
         
         AmazonTranslate translate = AmazonTranslateClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(creds))
